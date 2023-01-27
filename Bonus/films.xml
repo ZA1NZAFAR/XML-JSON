@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href="style.css"?>
+<films>
+    <film>
+        <titre>Les Brigades du Tigre</titre>
+        <duree>2h 5min</duree>
+        <genre>policier</genre>
+        <realisateur>Jérôme Cornuau</realisateur>
+        <langue>VF</langue>
+        <acteurs>
+            <acteur>C. Cornillac</acteur>
+            <acteur>D. Kruger</acteur>
+            <acteur>E. Baer</acteur>
+        </acteurs>
+        <annee>2005</annee>
+        <intrigue>Les aventures du commissaire Valentin et des inspecteurs Terrasson et Pujol, membres des Brigades
+            mobiles, corps spécial de la police française créé avant la Première Guerre mondiale.
+        </intrigue>
+        <horaires>
+            <jour>Mer, Sam</jour>
+            <horaire>14:00</horaire>
+            <horaire>16:40</horaire>
+            <horaire>19:40</horaire>
+            <horaire>22:10</horaire>
+            <jour>Jeu, Ven, Lun, Mar</jour>
+            <horaire>14:00</horaire>
+            <horaire>19:40</horaire>
+            <horaire>22:10</horaire>
+            <jour>Dim</jour>
+            <horaire>10:20</horaire>
+            <horaire>14:00</horaire>
+            <horaire>16:40</horaire>
+            <horaire>20:20</horaire>
+        </horaires>
+        <presse>3/5</presse>
+        <spectateurs>4/5</spectateurs>
+    </film>
+    <film>
+            <titre>Le Dernier Métro</titre>
+            <duree>2h 5min</duree>
+            <genre>historique</genre>
+            <realisateur>Julien Duvivier</realisateur>
+            <langue>VF</langue>
+            <acteurs>
+                <acteur>G. Depardieu</acteur>
+                <acteur>J. Deneuve</acteur>
+                <acteur>M. Pujol</acteur>
+            </acteurs>
+            <annee>1980</annee>
+            <intrigue>Paris, 1942. La guerre fait rage. Le théâtre du Châtelet est fermé. La troupe de la Comédie-Française
+                est réfugiée dans le métro. La troupe joue alors dans les souterrains de Paris, dans des conditions
+                épouvantables.
+            </intrigue>
+            <horaires>
+                <jour>Mer, Sam</jour>
+                <horaire>14:00</horaire>
+                <horaire>16:40</horaire>
+                <horaire>19:40</horaire>
+                <horaire>22:10</horaire>
+                <jour>Jeu, Ven, Lun, Mar</jour>
+                <horaire>14:00</horaire>
+                <horaire>19:40</horaire>
+                <horaire>22:10</horaire>
+                <jour>Dim</jour>
+                <horaire>10:20</horaire>
+                <horaire>14:00</horaire>
+                <horaire>16:40</horaire>
+                <horaire>20:20</horaire>
+            </horaires>
+            <presse>3/5</presse>
+            <spectateurs>4/5</spectateurs>
+        </film>
+</films>

@@ -1,0 +1,13 @@
+<!ELEMENT bib (domain | title | bib_ref | year | author | weblink)*>
+        <!-- La racine de notre document est "bib", qui contient tous les éléments possibles (domain, title, bib_ref, year, author, weblink) dans n'importe quel ordre. Cela permet à l'utilisateur de structurer leur document de la manière qui leur convient le mieux. -->
+        <!ELEMENT domain (title?, bib_ref*)>
+        <!-- Un "domain" peut contenir un "title" facultatif et plusieurs "bib_ref". Cela permet de regrouper les références par domaine de manière flexible. -->
+        <!ELEMENT title (#PCDATA)>
+        <!-- Le "title" contient des données de texte brut. -->
+        <!ELEMENT bib_ref (year, title, author, weblink?)>
+        <!-- Une "bib_ref" contient des "year", "title", "author" obligatoires et un "weblink" facultatif. Cela permet de s'assurer que toutes les informations de base d'une référence sont présentes, tout en permettant l'ajout d'un lien web facultatif. -->
+        <!ELEMENT year (#PCDATA)>
+        <!ELEMENT author (#PCDATA)>
+        <!-- "year" et "author" contiennent des données de texte brut. -->
+        <!ELEMENT weblink (#PCDATA)>
+        <!-- Le "weblink" contient une adresse web en format de texte brut. -->

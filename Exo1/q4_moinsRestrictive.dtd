@@ -1,0 +1,17 @@
+<!ELEMENT films (film+)>
+        <!ELEMENT film (#PCDATA|titre|duree|genre|realisateur|langue|acteurs|annee|intrigue|horaires|notes)*>
+        <!ELEMENT titre (#PCDATA)>
+        <!ELEMENT duree (#PCDATA)>
+        <!ELEMENT genre (#PCDATA)>
+        <!ELEMENT realisateur (#PCDATA)>
+        <!ELEMENT langue (#PCDATA)>
+        <!ELEMENT acteurs (acteur+)>
+        <!ELEMENT acteur (#PCDATA)>
+        <!ELEMENT annee (#PCDATA)>
+        <!ELEMENT intrigue (#PCDATA)>
+        <!ELEMENT horaires ((jour+, horaire+)*)>
+        <!ELEMENT jour (#PCDATA)>
+        <!ELEMENT horaire (#PCDATA)>
+        <!ELEMENT notes (presse?, spectateurs?)>
+        <!ELEMENT presse (#PCDATA)>
+        <!ELEMENT spectateurs (#PCDATA)>

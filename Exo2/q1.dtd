@@ -1,0 +1,7 @@
+<!ELEMENT bib (domain+)>
+        <!ELEMENT domain (title, bib_ref+)>
+        <!ELEMENT title (#PCDATA)>
+        <!ELEMENT bib_ref (year, title, author, weblink)>
+        <!ELEMENT year (#PCDATA)>
+        <!ELEMENT author (#PCDATA)>
+        <!ELEMENT weblink (#PCDATA)>
