@@ -19,7 +19,7 @@ import java.io.*;
 import java.util.ArrayList;
 import java.util.List;
 
-public class parser {
+public class Parser {
 
     public PrintWriter out = null;
 

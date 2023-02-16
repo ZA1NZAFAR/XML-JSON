@@ -18,7 +18,7 @@ public class Transf {
 	public static void main(String[] args) {
 		try {
 			System.out.println("debut");
-			parser parseur = new parser();
+			Parser parseur = new Parser();
 
 
 			String filename = "TP3/src/main/resources/bib.xml";
