@@ -1,20 +1,17 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<bib>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><bib>
 	<domain>
-		      <title>Specifications</title>
+		      
 		<bib_ref>
 			<year>March 2000</year>
-			<title>MOF 1.3</title>
+		      	<title>MOF  1.3</title>
 			<author>OMG</author>
 			<weblink>D:\SALIM\Docs\Specifications\MOF1_3.pdf</weblink>
 		</bib_ref>
-		<bib_ref>
+						<bib_ref>
 			<year>August 2002</year>
-			<title>IDLto Java LanguageMapping
-				Specification
-			</title>
+			
 			<author>OMG</author>
-			<weblink>D:\SALIM\Docs\Specifications\IDL2Java.pdf</weblink>
+							<weblink>D:\SALIM\Docs\Specifications\IDL2Java.pdf</weblink>
 		</bib_ref>
 		<bib_ref>
 			<year>1999</year>
@@ -25,8 +22,7 @@ Version 1.1</title>
 		</bib_ref>
 		<bib_ref>
 			<year>2002</year>
-			<title>XML Metadata Interchange (XMI)
-Version 2</title>
+			
 			<author>OMG</author>
 			<weblink>D:\SALIM\Docs\Specifications\XMI2.pdf</weblink>
 		</bib_ref>
@@ -39,7 +35,7 @@ Schema Specification</title>
 		</bib_ref>
 		<bib_ref>
 			<year>2002</year>
-			<title>EDOC</title>
+			
 			<author>OMG</author>
 			<weblink>D:\SALIM\Docs\Specifications\EDOC02-02-05.pdf</weblink>
 		</bib_ref>
@@ -48,7 +44,7 @@ Schema Specification</title>
 		<title>Theses</title>
 		<bib_ref>
 			<year>Octobre 2001</year>
-			<title>Echanges de Spécifications Hétérogènes et Réparties</title>
+			
 			<author>Xavier Blanc</author>
 			<weblink>D:\SALIM\Docs\Theses\TheseXavier.pdf</weblink>
 		</bib_ref>
@@ -60,7 +56,7 @@ Schema Specification</title>
 		</bib_ref>
 		<bib_ref>
 			<year>Juin 2002</year>
-			<title>Contribution à la représentation de processu par des techniques de méta modélisation</title>
+			
 			<author>Erwan Breton</author>
 			<weblink>D:\SALIM\Docs\Theses\ErwanBretonThesis.pdf</weblink>
 		</bib_ref>
@@ -72,7 +68,7 @@ Schema Specification</title>
 		</bib_ref>
 		<bib_ref>
 			<year>Juillet 2002</year>
-			<title>Utilsation d'agents mobiles pour la construction des services distribués </title>
+			
 			<author>Siegfried Rouvrais </author>
 			<weblink>D:\SALIM\Docs\Theses\theserouvrais.pdf</weblink>
 		</bib_ref>
@@ -81,7 +77,7 @@ Schema Specification</title>
 		<title>Rapport de Stages</title>
 		<bib_ref>
 			<year>2001</year>
-			<title>Composition de services </title>
+			
 			<author>Olivier Nano </author>
 			<weblink>D:\SALIM\Docs\Rapport de stages\01-dea-nano.pdf</weblink>
 		</bib_ref>
@@ -93,7 +89,7 @@ Schema Specification</title>
 		</bib_ref>
 		<bib_ref>
 			<year>Mai 2001</year>
-			<title>La composition de services dans les réseaux actifs </title>
+			
 			<author>Prométhée Spathis</author>
 			<weblink>D:\SALIM\Docs\Rapport de stages\Rapport bibliographique Final.pdf</weblink>
 		</bib_ref>
@@ -105,7 +101,7 @@ Schema Specification</title>
 		</bib_ref>
 		<bib_ref>
 			<year>Mai 1999</year>
-			<title>Les réseaux Actifs ANTS</title>
+			
 			<author>Prométhée Spathis</author>
 			<weblink>D:\SALIM\Docs\Rapport de stages\Promethee.pdf</weblink>
 		</bib_ref>
@@ -114,7 +110,7 @@ Schema Specification</title>
 		<title>MOF</title>
 		<bib_ref>
 			<year>2003</year>
-			<title>Structuration de méta-modèles par séparation des préoccupations</title>
+			
 			<author>Raphaël Marvie</author>
 			<weblink>D:\SALIM\Docs\MOF\marvie.pdf</weblink>
 		</bib_ref>
@@ -127,8 +123,7 @@ Web Application Design Tools</title>
 		</bib_ref>
 		<bib_ref>
 			<year>2002</year>
-			<title>Transformation entre un profil UML et un
-méta-modèle MOF</title>
+			
 			<author>Mikaël Peltier</author>
 			<weblink>D:\SALIM\Docs\MOF\lmo_2002.pdf</weblink>
 		</bib_ref>
@@ -140,7 +135,7 @@ méta-modèle MOF</title>
 		</bib_ref>
 	</domain>
 	<domain>
-		<title>EDOC</title>
+		
 		<bib_ref>
 			<year/>
 			<title>From EDOC components to CCM components :
@@ -150,7 +145,7 @@ a precise mapping specification</title>
 		</bib_ref>
 	</domain>
 	<domain>
-		<title>Processus </title>
+		
 		<bib_ref>
 			<year>2002</year>
 			<title>Model-Driven Process Engineering</title>
@@ -159,7 +154,7 @@ a precise mapping specification</title>
 		</bib_ref>
 		<bib_ref>
 			<year>2001</year>
-			<title>Un méta-modèle de gestion par les activités</title>
+			
 			<author>Erwan Breton, Jean Bézivin</author>
 			<weblink>D:\SALIM\Docs\Processus et WorkFlow\compsac.pdf</weblink>
 		</bib_ref>
@@ -168,7 +163,7 @@ a precise mapping specification</title>
 		<title>MDA</title>
 		<bib_ref>
 			<year>2000</year>
-			<title>Model Driven Architecture</title>
+			
 			<author>Richard Soley and the OMG Staff Strategy Group</author>
 			<weblink>D:\SALIM\Docs\MDA\MDA_Soley.pdf</weblink>
 		</bib_ref>
@@ -181,7 +176,7 @@ Opportunities and Challenges</title>
 		</bib_ref>
 		<bib_ref>
 			<year>2002</year>
-			<title>Towards an MDA-Oriented Methodology</title>
+			
 			<author>Marie-Pierre Gervais </author>
 			<weblink>D:\SALIM\Docs\MDA\Gervais-COMPSAC.pdf</weblink>
 		</bib_ref>
@@ -193,7 +188,7 @@ Opportunities and Challenges</title>
 		</bib_ref>
 		<bib_ref>
 			<year/>
-			<title>Generative Programming via Graph Transformations in the Model-Driven Architecture</title>
+			
 			<author>Aditya Agrawal, Tihamer Levendovszky, Jon Sprinkle, Feng Shi, and Gabor Karsai</author>
 			<weblink>D:\SALIM\Docs\MDA\karsaig.pdf</weblink>
 		</bib_ref>
@@ -205,7 +200,7 @@ Opportunities and Challenges</title>
 		</bib_ref>
 		<bib_ref>
 			<year>2001</year>
-			<title>From Object Composition to Model Transformation with the MDA</title>
+			
 			<author>Jean Bézivin</author>
 			<weblink>D:\SALIM\Docs\MDA\TOOLS.USA.pdf</weblink>
 		</bib_ref>
@@ -218,9 +213,7 @@ Opportunities and Challenges</title>
 		</bib_ref>
 		<bib_ref>
 			<year>2001</year>
-			<title>Model-Driven Architecture: Vision, Standards
-And Emerging Technologies
-</title>
+			
 			<author>John D. Poole</author>
 			<weblink>D:\SALIM\Docs\MDA\MDAimportant.pdf</weblink>
 		</bib_ref>
@@ -234,7 +227,7 @@ our toolset, implemented since 1994.
 		</bib_ref>
 	</domain>
 	<domain>
-		<title>Comosition de services</title>
+		
 		<bib_ref>
 			<year>1998</year>
 			<title>Composing Active Services in NetScript</title>
@@ -244,7 +237,7 @@ our toolset, implemented since 1994.
 		</bib_ref>
 	</domain>
 	<domain>
-		<title>Services Web</title>
+		
 		<bib_ref>
 			<year>1992</year>
 			<title>Collecting and Querying
@@ -254,7 +247,7 @@ Distributed Traces of Composite Service Executions</title>
 		</bib_ref>
 		<bib_ref>
 			<year>2002</year>
-			<title>Towards Patterns of Web Services Comosition </title>
+			
 			<author>B. Benatallah, M. Dumas, F.A. Rabhi</author>
 			<weblink>D:\SALIM\Docs\WebServices\towards-patterns-of-web.pdf</weblink>
 		</bib_ref>
@@ -266,7 +259,7 @@ Distributed Traces of Composite Service Executions</title>
 		</bib_ref>
 	</domain>
 	<domain>
-		<title>Composants</title>
+		
 		<bib_ref>
 			<year>2000</year>
 			<title>JavaPod : une plate-forme à composants adaptable et
@@ -276,7 +269,7 @@ extensible</title>
 		</bib_ref>
 		<bib_ref>
 			<year>1998</year>
-			<title>OPAD : Outils Pour Architectures Dynamiques</title>
+			
 			<author>Olivier Barais, Laurence Duchien</author>
 			<weblink>D:\SALIM\Docs\Composants\OPAD.pdf</weblink>
 		</bib_ref>
