@@ -16,8 +16,6 @@ import javax.xml.parsers.DocumentBuilderFactory;
 import javax.xml.parsers.ParserConfigurationException;
 import javax.xml.transform.TransformerException;
 import java.io.*;
-import java.util.ArrayList;
-import java.util.List;
 
 public class Parser {
 
@@ -45,7 +43,7 @@ public class Parser {
         out.println("<title>TP3</title>");
         out.println("</head>");
         out.println("<body>");
-        out.println("<META http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\"><h1 align=\"center\">Domaines </h1>");
+        out.println("<META http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\"><h1 align=\"left\">Domaines </h1>");
 
         //instancier le contrcuteur de parseurs
         DocumentBuilderFactory _factory = DocumentBuilderFactory.newInstance();
@@ -56,59 +54,74 @@ public class Parser {
         // cr褲 un parseur
         DocumentBuilder _builder = _factory.newDocumentBuilder();
 
-        // Charger le document
-        Document doc = _builder.parse(_xml_input_file);
+        try {
+
+            // Charger le document
+            Document doc = _builder.parse(_xml_input_file);
 
 
-        //get all domain elements and loop through them
-        NodeList domains = doc.getElementsByTagName("domain");
-        for (int i = 0; i < domains.getLength(); i++) {
-            Node domain = domains.item(i);
-            if (domain.getNodeType() == Node.ELEMENT_NODE) {
-                Element domainElement = (Element) domain;
+            // normalize the Document object
+            doc.getDocumentElement().normalize();
+
+
+
+            // iterate over the domain elements and write the HTML content
+            NodeList domainList = doc.getElementsByTagName("domain");
+
+            // iterate over the domain elements and write the HTML content
+            for (int i = 0; i < domainList.getLength(); i++) {
+                Node domainNode = domainList.item(i);
+                Element domainElement = (Element) domainNode;
                 String domainTitle = domainElement.getElementsByTagName("title").item(0).getTextContent();
+                out.println("<h2><a href=\"#" + domainTitle + "\">" + domainTitle + "</a></h2>");
+            }
+            out.println("<hr><hr>");
 
-                out.println("<h2>" + domainTitle + "</h2>");
+            for (int i = 0; i < domainList.getLength(); i++) {
+                Node domainNode = domainList.item(i);
+                if (domainNode.getNodeType() == Node.ELEMENT_NODE) {
 
-                // 1 table per domain
-                out.println("<table border=\"1\" style=\"width:100%\">");
+                    Element domainElement = (Element) domainNode;
+                    String domainTitle = domainElement.getElementsByTagName("title").item(0).getTextContent();
+                    out.println("<table width=\"100%\" border=\"1\">");
+                    out.println("<tbody><tr>");
+                    out.println("<td width=\"100%\" bgcolor=\"#C0C0C0\">");
+                    out.println("<h2><a name=\"" + domainTitle + "\">" + domainTitle + "</a></h2>");
+                    out.println("</td>");
+                    out.println("</tr>");
+                    out.println("</tbody></table>");
+                    out.println("<hr>");
 
-                // get all bib_ref elements and loop through them
-                NodeList bibRefs = domainElement.getElementsByTagName("bib_ref");
+                    NodeList bibRefList = domainElement.getElementsByTagName("bib_ref");
+                    for (int j = 0; j < bibRefList.getLength(); j++) {
+                        Node bibRefNode = bibRefList.item(j);
+                        if (bibRefNode.getNodeType() == Node.ELEMENT_NODE) {
+                            Element bibRefElement = (Element) bibRefNode;
+                            String bibRefYear = bibRefElement.getElementsByTagName("year").item(0).getTextContent();
+                            String bibRefTitle = bibRefElement.getElementsByTagName("title").item(0).getTextContent();
+                            String bibRefAuthor = bibRefElement.getElementsByTagName("author").item(0).getTextContent();
+                            String bibRefWeblink = bibRefElement.getElementsByTagName("weblink").item(0).getTextContent();
 
-                // domain table headers
-                List<String> tableHeaders = new ArrayList<>();
-
-                for (int j = 0; j < bibRefs.getLength(); j++) {
-                    Node bibRef = bibRefs.item(j);
-                    if (bibRef.getNodeType() == Node.ELEMENT_NODE) {
-                        Element bibRefElement = (Element) bibRef;
-
-                        if (j == 0) {
-                            //get tags in bibRefElement and add them to tableHeaders
-                            out.println("<tr>");
-                            for (int k = 0; k < bibRefElement.getChildNodes().getLength(); k++) {
-                                if (bibRefElement.getChildNodes().item(k).getNodeType() == Node.ELEMENT_NODE) {
-                                    tableHeaders.add(bibRefElement.getChildNodes().item(k).getNodeName());
-                                    out.println("<th>" + bibRefElement.getChildNodes().item(k).getNodeName() + "</th>");
-                                }
-                            }
-                            out.println("</tr>");
+                            out.println("Annee  :" + bibRefYear + "<br>");
+                            out.println("<h3>Titre :" + bibRefTitle + "</h3>");
+                            out.println("Auteur(s)  :" + bibRefAuthor + "<br>");
+                            out.println("Lien : <a href=\"" + bibRefWeblink + "\">" + bibRefWeblink + "</a><br>");
+                            out.println("<hr>");
                         }
-
-                        // get all tags in bibRefElement and add them to table
-                        out.println("<tr>");
-                        for (String tableHeader : tableHeaders) {
-                            out.println("  <td>" + bibRefElement.getElementsByTagName(tableHeader).item(0).getTextContent() + "</td>");
-                        }
-                        out.println("</tr>");
                     }
                 }
-                out.println("</table>");
             }
+
+            // finish writing the HTML content
+            out.println("</body>");
+            out.println("</html>");
+
+            // close the PrintWriter
+            out.close();
+
+            System.out.println("Conversion completed successfully!");
+        } catch (Exception e) {
+            e.printStackTrace();
         }
-        out.println("</body></html>");
-        out.close();
-        out.flush();
     }
 }

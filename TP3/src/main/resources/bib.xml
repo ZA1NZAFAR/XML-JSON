@@ -1,17 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <bib>
 	<domain>
-		<title>Specifications</title>
+		      <title>Specifications</title>
 		<bib_ref>
 			<year>March 2000</year>
-			<title>MOF  1.3</title>
+			<title>MOF 1.3</title>
 			<author>OMG</author>
 			<weblink>D:\SALIM\Docs\Specifications\MOF1_3.pdf</weblink>
 		</bib_ref>
 		<bib_ref>
 			<year>August 2002</year>
 			<title>IDLto Java LanguageMapping
-Specification</title>
+				Specification
+			</title>
 			<author>OMG</author>
 			<weblink>D:\SALIM\Docs\Specifications\IDL2Java.pdf</weblink>
 		</bib_ref>
