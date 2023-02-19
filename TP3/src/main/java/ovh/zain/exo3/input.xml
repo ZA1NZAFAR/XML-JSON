@@ -1,0 +1,34 @@
+<?xml version="1.0"?> <!DOCTYPE list [
+        <!ELEMENT list (person)*>
+        <!ELEMENT person (name, children)> <!ATTLIST person gender (M | F) #REQUIRED> <!ELEMENT name (#PCDATA)>
+        <!ELEMENT children (person)*>
+        ]>
+<list>
+    <person gender="M">
+        <name>Julien</name>
+        <children>
+            <person gender="F">
+                <name>Sophie</name>
+                <children></children>
+            </person>
+            <person gender="F">
+                <name>Ursule</name>
+                <children></children>
+            </person>
+        </children>
+    </person>
+    <person gender="F">
+        <name>Marie</name>
+        <children>
+            <person gender="M">
+                <name>Joseph</name>
+                <children>
+                    <person gender="F">
+                        <name>Marie</name>
+                        <children></children>
+                    </person>
+                </children>
+            </person>
+        </children>
+    </person>
+</list>
