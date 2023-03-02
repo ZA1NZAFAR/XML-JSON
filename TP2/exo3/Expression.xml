@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<expression xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="Expression.xsd">
+    <apply>
+        <divide/>
+        <expression>
+            <apply>
+                <quotient/>
+                <expression>
+                    <cn>65.78</cn>
+                </expression>
+                <expression>
+                    <cn>0.25</cn>
+                </expression>
+            </apply>
+        </expression>
+        <expression>
+            <cn>7</cn>
+        </expression>
+    </apply>
+</expression>

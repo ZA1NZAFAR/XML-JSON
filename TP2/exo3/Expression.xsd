@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <xsd:element name="expression" type="mathExpression"/>
+    <xsd:complexType name="mathExpression">
+        <xsd:choice>
+            <xsd:element name="cn" type="xsd:double"/>
+            <xsd:element name="apply">
+                <xsd:complexType>
+                    <xsd:sequence>
+                        <xsd:choice>
+                            <xsd:element name="plus" nillable="true"/>
+                            <xsd:element name="times" nillable="true"/>
+                            <xsd:element name="divide" nillable="true"/>
+                            <xsd:element name="minus" nillable="true" minOccurs="0" maxOccurs="1"/>
+                            <xsd:element name="quotient" nillable="true"/>
+                        </xsd:choice>
+                        <xsd:element name="expression" type="mathExpression" minOccurs="1" maxOccurs="2"/>
+                    </xsd:sequence>
+                </xsd:complexType>
+            </xsd:element>
+        </xsd:choice>
+    </xsd:complexType>
+</xsd:schema>
