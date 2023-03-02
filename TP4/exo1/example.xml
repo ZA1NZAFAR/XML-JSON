@@ -1,0 +1,24 @@
+<AAA> 
+  <BBB/>
+  <BCD/> 
+  <CCC> 
+    <BBB nom='titi' /> 
+    <BBB nom='toto' /> 
+  </CCC>  
+  <BBB/>
+  <BBB/>
+  <XXX/>
+  <DDD> 
+    <BBB/> 
+    <EEE/>
+  </DDD>
+  <FFF id='123'>
+    <BBB id='abc'/>
+    <QQQ id='q1'>
+      <BBB/>
+      <ZZZ/>
+    </QQQ> 
+    <QQQ id='q2'/>
+  </FFF> 
+  <CCC/> 
+</AAA> 

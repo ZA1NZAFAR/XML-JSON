@@ -1,0 +1,35 @@
+Exo 1 de TP4 d'XML
+1) //
+2) //AAA/CCC
+3) //AAA/DDD/BBB
+4) //BBB
+5) //DDD/BBB
+6) //AAA/*
+7) //BBB[ancestor::*[count(ancestor::*) > 0]]
+8) //BBB[ancestor::*[count(ancestor::*) = 3]]
+9) //*
+10) //AAA/BBB[1]
+11) //*/BBB[last()]
+12) //*[@id]
+13) //BBB[@nom]
+14) //BBB[@nom="toto"]
+15) //BBB[count(@*) > 0]
+16) //BBB[not(@*)]
+17) //QQQ[@id="q1"]
+18) //*[count(BBB)=2]
+19) //*[count(*)=2]
+20) //*[starts-with(name(),'B')]
+21) //*[contains(name(),'C')]
+22) //*[string-length(name()) = 3]
+23) //BBB | //CCC
+24) //BBB/parent::*
+25) //AAA/*[self::BBB or self::EEE]
+26) //DDD/parent::AAA
+27) //DDD/precent-sibling::*
+27) //DDD/following-sibling::*
+28) //QQQ/ancestor::*
+29) //FFF/descendant::*
+30) //AAA/XXX/preceding::*[1]
+31) //AAA/XXX/following::*[1]
+32) //AAA/FFF/descendant-or-self::*
+33) //AAA/BBB[position() mod 2 = 1]
