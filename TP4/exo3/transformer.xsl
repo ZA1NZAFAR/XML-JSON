@@ -14,31 +14,20 @@
 
     <xsl:template match="bib">
         <h1>Domaines</h1>
+        <xsl:apply-templates select="/bib/domain/title"/>
         <br/>
-        <xsl:for-each select="/bib/domain/title">
-            <h2 style="margin:0px;">
-                <a href="{concat('#', .)}">
-                    <xsl:value-of select="."/>
-                </a>
-            </h2>
-            <br/>
-        </xsl:for-each>
         <hr/>
         <hr/>
         <xsl:apply-templates select="domain"/>
     </xsl:template>
 
     <xsl:template match="/bib/domain/title">
-        <h1>Domaines</h1>
         <br/>
         <h2 style="margin:0px;">
             <a href="{concat('#', .)}">
                 <xsl:value-of select="."/>
             </a>
         </h2>
-        <br/>
-        <hr/>
-        <hr/>
         <xsl:apply-templates select="domain"/>
     </xsl:template>
 
