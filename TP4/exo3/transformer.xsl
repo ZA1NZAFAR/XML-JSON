@@ -28,6 +28,20 @@
         <xsl:apply-templates select="domain"/>
     </xsl:template>
 
+    <xsl:template match="/bib/domain/title">
+        <h1>Domaines</h1>
+        <br/>
+        <h2 style="margin:0px;">
+            <a href="{concat('#', .)}">
+                <xsl:value-of select="."/>
+            </a>
+        </h2>
+        <br/>
+        <hr/>
+        <hr/>
+        <xsl:apply-templates select="domain"/>
+    </xsl:template>
+
     <xsl:template match="domain">
         <div style="width:100%;background-color:#C0C0C0;border:1px solid black;">
             <h2 id="{title}">
