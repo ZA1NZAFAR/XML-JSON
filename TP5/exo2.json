@@ -1,0 +1,43 @@
+{
+  "type": "object",
+  "properties": {
+    "codePerm": {
+      "type": "string",
+      "pattern": "^[A-Z]{4}[0-9]{8}$"
+    },
+    "nom": {
+      "type": "string"
+    },
+    "prenom": {
+      "type": "string"
+    },
+    "cours": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "sigle": {
+            "type": "string"
+          },
+          "credits": {
+            "type": "integer",
+            "minimum": 1
+          },
+          "reprise": {
+            "type": "boolean"
+          }
+        },
+        "required": [
+          "sigle",
+          "credits"
+        ]
+      }
+    }
+  },
+  "required": [
+    "codePerm",
+    "nom",
+    "prenom",
+    "cours"
+  ]
+}

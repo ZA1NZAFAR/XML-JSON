@@ -1,0 +1,37 @@
+{
+  "type": "object",
+  "required": [
+    "facID",
+    "total"
+  ],
+  "properties": {
+    "facID": {
+      "type": "string"
+    },
+    "total": {
+      "type": "number"
+    },
+    "patternProperties": {
+      "^[A-Z]{1}[0-9]{3}$": {
+        "type": "object",
+        "properties": {
+          "nom": {
+            "type": "string"
+          },
+          "qt": {
+            "type": "integer"
+          },
+          "prix": {
+            "type": "number"
+          }
+        },
+        "required": [
+          "nom",
+          "qt",
+          "prix"
+        ]
+      }
+    }
+  },
+  "additionalProperties": true
+}

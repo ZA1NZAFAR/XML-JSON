@@ -1,0 +1,8 @@
+1) $ - tous les membres de la structure JSON
+2) $..author - les auteurs de tous les livres
+3) $..book[*] - tous les livres
+4) $..book[*].price - les prix de tous les livres
+5) $..book[0] le 1er livre
+6) $..book[-2:] - les deux derniers livres
+7) $..book[?(@.isbn)] - tous les livres avec le numéro isbn
+8) $..book[?(@.price > 10)] - tous les livres plus chers que 10

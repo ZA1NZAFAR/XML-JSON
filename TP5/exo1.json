@@ -1,0 +1,49 @@
+{
+  "etudiants": [
+    {
+      "identifiant": 1,
+      "nom": "Ivanov",
+      "prenom": "Dmitri",
+      "dateNaissance": "1999-07-25",
+      "lieuNaissance": "Moscou",
+      "adresse": {
+        "numRue": 34,
+        "nomRue": "Rue Lomonossov",
+        "codePostal": "119192",
+        "ville": "Moscou"
+      },
+      "mail": "dmitri.ivanov@exemple.com",
+      "coursSuivis": ["Mathématiques", "Physique", "Informatique"]
+    },
+    {
+      "identifiant": 2,
+      "nom": "Petrov",
+      "prenom": "Irina",
+      "dateNaissance": "2000-02-14",
+      "lieuNaissance": "Saint-Pétersbourg",
+      "adresse": {
+        "numRue": 9,
+        "nomRue": "Prospect Nevsky",
+        "codePostal": "191025",
+        "ville": "Saint-Pétersbourg"
+      },
+      "mail": "irina.petrov@exemple.com",
+      "coursSuivis": ["Histoire", "Anglais", "Sociologie"]
+    },
+    {
+      "identifiant": 3,
+      "nom": "Sidorov",
+      "prenom": "Alexei",
+      "dateNaissance": "1998-11-20",
+      "lieuNaissance": "Ekaterinbourg",
+      "adresse": {
+        "numRue": 17,
+        "nomRue": "Rue Lénine",
+        "codePostal": "620075",
+        "ville": "Ekaterinbourg"
+      },
+      "mail": "alexei.sidorov@exemple.com",
+      "coursSuivis": ["Espagnol", "Littérature", "Philosophie"]
+    }
+  ]
+}
